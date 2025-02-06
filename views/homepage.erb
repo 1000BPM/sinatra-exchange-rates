@@ -1,0 +1,17 @@
+<h1>Currency pairs</h1>
+
+
+<ul>
+<% @curr_list.each do |money| %>
+  <li>
+  <a href ="/<%=money %>">Convert 1 <%=money%> to...</li>
+      <% @from_currency = money %>
+
+<% end %>
+
+
+</ul>
+<!--<div>-->
+<%#= @parsed_response%>
+
+<!--</div>-->

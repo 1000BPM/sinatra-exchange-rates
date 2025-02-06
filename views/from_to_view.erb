@@ -1,0 +1,12 @@
+<h1>Convert <%= @from_currency%> </h1>
+
+<ul>
+<% @curr_list.each do |to_curr| %>
+  <li>
+  <a href ="/<%=@from_currency %>/<%=to_curr%>">Convert 1 <%=@from_currency%> to <%=to_curr%> </li>
+
+      <% @to_currency = to_curr %>
+
+<% end %>
+
+</ul>
